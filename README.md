@@ -1,3 +1,4 @@
-= Remedy
+# Remedy
 
-This project rocks and uses MIT-LICENSE.
+Remedy is a simple Rails Engine that provides/manages frequently asked questions
+and help documents.
