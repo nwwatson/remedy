@@ -1,7 +1,7 @@
 class Remedy::Client
   def self.instance
-    @instance ||= new do |config|
-      config.url = Remedy.zendesk_url
+    @instance ||= ZendeskAPI::Client.new do |config|
+      config.url = Remedy.zendesk_api
       config.username = Remedy.zendesk_user
       config.token = Remedy.zendesk_token
 

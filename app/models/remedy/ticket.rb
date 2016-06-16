@@ -1,15 +1,21 @@
-class Ticket
+class Remedy::Ticket
   include ActiveModel::Model
 
   attr_accessor :subject, :body, :requester_email, :requester_name
 
-  validates_presence_of :subject, :body, :requester_email, :requester_name
+  validates_presence_of :subject,
+                        :body,
+                        :requester_email,
+                        :requester_name
+                        
   validates :requester_email, email: true
 
   def save
     return false unless valid?
 
-    ZendeskAPI::Ticket.create(client, options)
+    ZendeskAPI::Ticket.create(client, options_hash)
+
+    return true
   end
 
   private

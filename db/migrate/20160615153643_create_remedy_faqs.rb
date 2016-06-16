@@ -3,6 +3,7 @@ class CreateRemedyFaqs < ActiveRecord::Migration
     create_table :remedy_faqs do |t|
       t.string :title, null: false, index: true
       t.text :body, null: false
+      t.string :slug, index: true, unique: true
       t.boolean :is_important, default: false, index: true
       t.boolean :is_active, default: false, index: true
       t.timestamps null: false

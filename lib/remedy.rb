@@ -26,8 +26,13 @@ module Remedy
     yield self
   end
 
+  def self.zendesk_api
+    "https://#{Remedy.zendesk_url}/api/v2"
+  end
+
 end
 
+require 'zendesk_api'
 require "remedy/version"
 require "remedy/client"
 require "remedy/engine"

@@ -1,6 +1,6 @@
 module Remedy
-  class Faq < ActiveRecord::Base
-    validates_presence_of :title, :body, :slug
+  class Video < ActiveRecord::Base
+    validates_presence_of :title, :description, :video_number, :slug
 
     def slug
       name.downcase.gsub(" ", "-")
