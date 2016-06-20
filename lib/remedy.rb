@@ -4,6 +4,9 @@ module Remedy
   mattr_accessor :enable_documents
   @@enable_documents = true
 
+  mattr_accessor :document_upload_path
+  @@document_upload_path = "public/shared"
+
   mattr_accessor :enable_faqs
   @@enable_faqs = true
 

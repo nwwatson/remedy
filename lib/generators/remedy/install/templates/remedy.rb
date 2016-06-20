@@ -2,6 +2,9 @@ Remedy.setup do |config|
   # ==> Configuration for enabling Documents
   config.enable_documents = true
 
+  # ==> Configuration for document upload path
+  config.document_upload_path = "public/shared"
+
   # ==> Configuration for enabling Faqs
   config.enable_faqs = true
 
