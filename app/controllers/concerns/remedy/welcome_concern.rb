@@ -7,8 +7,8 @@ module Remedy
     end
 
     def show
-      @documents = Remedy::Document.order(title: :desc)
-      @videos = Remedy::Video.order(title: :desc)
+      @documents = Remedy::Document.order(:title)
+      @videos = Remedy::Video.order(:title)
     end
   end
 end
