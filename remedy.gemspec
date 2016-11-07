@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.test_files = Dir['test/**/*']
 
-  s.add_dependency 'rails', '~> 4.2.6'
+  s.add_dependency "rails", "< 5.1"
   s.add_dependency 'nokogiri', '1.6.7.2'
   s.add_dependency 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
   s.add_dependency 'zendesk_api', '~> 1.13', '>= 1.13.4'
